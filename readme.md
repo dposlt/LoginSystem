@@ -37,10 +37,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Methods
 ```
-- [x] count all days without alcohol
-- [x] count all days with alcohol
-- [x] change color for ok and ko days
-- [x] add parametr -h for help
-- [x] add db to method
+[-] register
+[-] login
+[-] 3 incorect password
+[-] block account
+
 ```
 
