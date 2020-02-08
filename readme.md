@@ -1,6 +1,6 @@
 # Project Login System
 
-Description: console login system with reqistration
+Description: console login system with registration
 
 ## project done
 0 %
