@@ -19,6 +19,8 @@ def createTable():
 def insertToTable():
     conn, cursor = connect()
     today = datetime.date.today
+    print(today)
+    exit()
     tbInsert = f"INSERT INTO tbLogin values ('rowid', 'viperdavid', 'test', '{today})"
     cursor.execute(f'{tbInsert}')
     conn.commit()
@@ -27,18 +29,19 @@ def select():
     conn, cursor = connect()
     tbSelect = "Select * from tbLogin;"
     s = cursor.execute(f'{tbSelect}')
-    return s
+    row = s.fetchall()
 
+    return row
     conn.close()
 
 
 def main():
     #createTable()
-    insertToTable()
+    #print('execute')
+    #insertToTable()
     conn, cursor = connect()
     #c = cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
     for i in select():
         print(i)
-
 
 main()
